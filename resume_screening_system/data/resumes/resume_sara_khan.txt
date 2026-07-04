@@ -1,0 +1,21 @@
+Sara Khan
+Business Analyst
+
+Summary:
+Business Analyst with strong Excel and communication skills, supporting
+sales and marketing teams with reporting and insights.
+
+Skills:
+Excel, Communication, Teamwork, Time Management, SQL, Data Analysis,
+Project Management
+
+Experience:
+Business Analyst, MarketPro Solutions (2020 - Present)
+- Built reports in Excel to track sales performance.
+- Used SQL for basic data extraction and analysis.
+- Coordinated with cross-functional teams, demonstrating strong teamwork
+  and project management skills.
+- Presented monthly insights to leadership with clear communication.
+
+Education:
+BBA, Delhi University

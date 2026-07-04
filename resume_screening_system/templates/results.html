@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results — ScreenFit</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">Screen<span>Fit</span></div>
+      <div class="tagline">Resume Screening &amp; Ranking</div>
+    </header>
+
+    <h1 class="page-title">Ranking results</h1>
+    <div class="meta-strip">
+      <div>Role: <strong>{{ jd_source_name }}</strong></div>
+      <div>Candidates screened: <strong>{{ num_resumes }}</strong></div>
+    </div>
+
+    <div class="card chart-card">
+      <h2>Fit score comparison</h2>
+      <img src="data:image/png;base64,{{ chart_b64 }}" alt="Bar chart of candidate fit scores">
+    </div>
+
+    {% for row in report %}
+      {% set band = 'high' %}
+      {% if row.final_score < 30 %}{% set band = 'low' %}
+      {% elif row.final_score < 55 %}{% set band = 'mid' %}
+      {% endif %}
+      <div class="candidate {{ band }}">
+        <div class="tab-label">RANK #{{ row.rank }}</div>
+        <div class="score-badge">
+          <div class="num">{{ row.final_score }}</div>
+          <div class="pct">/ 100</div>
+        </div>
+        <div class="candidate-body">
+          <h3>{{ row.name }}</h3>
+          <div class="sub-scores">
+            <span>Text match: {{ row.similarity_score }}%</span>
+            <span>Skill coverage: {{ row.skill_score }}%</span>
+            <span>{{ row.matched_skills|length }}/{{ row.required_skills|length }} required skills</span>
+          </div>
+          <div class="tags">
+            <span class="tag-label">Matched</span>
+            {% for s in row.matched_skills %}<span class="tag matched">{{ s }}</span>{% else %}<span class="tag missing">none</span>{% endfor %}
+          </div>
+          <div class="tags">
+            <span class="tag-label">Missing</span>
+            {% for s in row.missing_skills %}<span class="tag missing">{{ s }}</span>{% else %}<span class="tag matched">none — full coverage</span>{% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <div class="actions-row">
+      <a href="/download/{{ run_id }}" class="btn-secondary">Download results.csv</a>
+      <a href="/" class="btn-secondary">Screen another role</a>
+    </div>
+
+    <footer class="foot">
+      Score = 40% text/context similarity (TF-IDF) + 60% required-skill overlap.
+    </footer>
+  </div>
+</body>
+</html>

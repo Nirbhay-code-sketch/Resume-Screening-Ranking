@@ -1,0 +1,22 @@
+Daniel Lee
+Backend Developer
+
+Summary:
+Backend Developer with 4 years of experience building REST APIs and
+scalable microservices for fintech applications.
+
+Skills:
+JavaScript, Node.js, Python, REST API, SQL, MongoDB, Docker, Kubernetes,
+Git, CI/CD, Linux, AWS
+
+Experience:
+Backend Developer, PayFlow Technologies (2021 - Present)
+- Designed and built REST APIs using Node.js and Django.
+- Managed SQL and MongoDB databases for transaction processing.
+- Containerized services using Docker and orchestrated with Kubernetes.
+- Set up CI/CD pipelines using Jenkins for automated deployment.
+- Deployed and maintained infrastructure on AWS, running on Linux servers.
+- Used Git for version control in an Agile team.
+
+Education:
+B.Tech in Information Technology, NIT Trichy

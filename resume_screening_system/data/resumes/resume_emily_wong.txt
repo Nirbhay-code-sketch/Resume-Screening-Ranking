@@ -1,0 +1,19 @@
+Emily Wong
+Frontend Developer
+
+Summary:
+Frontend Developer focused on building responsive, accessible web
+interfaces using React and modern CSS.
+
+Skills:
+HTML, CSS, JavaScript, React, Git, Teamwork, Communication
+
+Experience:
+Frontend Developer, DesignHub Studio (2022 - Present)
+- Built responsive UI components using React, HTML, and CSS.
+- Collaborated closely with backend developers and designers, showing
+  strong teamwork and communication.
+- Used Git for version control across multiple feature branches.
+
+Education:
+B.Sc in Computer Science, University of Toronto

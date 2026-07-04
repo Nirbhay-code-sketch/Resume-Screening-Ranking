@@ -1,0 +1,24 @@
+Arjun Mehta
+Machine Learning Engineer
+
+Summary:
+Machine Learning Engineer passionate about deep learning and NLP, with
+hands-on experience deploying models to production.
+
+Skills:
+Python, Machine Learning, Deep Learning, NLP, TensorFlow, PyTorch, Pandas,
+NumPy, Scikit-learn, AWS, Git, Problem Solving
+
+Experience:
+ML Engineer, DeepMinds AI (2022 - Present)
+- Developed deep learning models using TensorFlow and PyTorch for
+  text classification and NLP tasks.
+- Deployed models on AWS using Docker containers.
+- Used pandas and numpy for data preprocessing pipelines.
+- Applied problem solving skills to debug complex model performance issues.
+
+Research Assistant, University Lab (2021 - 2022)
+- Worked on NLP research projects using scikit-learn and Python.
+
+Education:
+M.Tech in Artificial Intelligence, IIT Delhi

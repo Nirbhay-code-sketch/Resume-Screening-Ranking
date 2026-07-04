@@ -1,0 +1,18 @@
+Rahul Verma
+Fresher - Aspiring Data Analyst
+
+Summary:
+Recent graduate eager to start a career in data analytics, with academic
+projects in Python and Excel.
+
+Skills:
+Python, Excel, Basic SQL, Communication, Teamwork
+
+Projects:
+- Built a small data analysis project in Python using pandas to explore
+  a public dataset for a college assignment.
+- Created Excel dashboards for a student club's budget tracking.
+- Participated in group projects, demonstrating teamwork and communication.
+
+Education:
+B.Com, Mumbai University (2026)

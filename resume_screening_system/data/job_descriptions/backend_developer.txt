@@ -1,0 +1,27 @@
+Job Title: Backend Developer
+
+We are hiring a Backend Developer to design and maintain scalable server-side
+applications. You will work closely with the frontend and DevOps teams to
+ship reliable, well-tested REST APIs.
+
+Responsibilities:
+- Design and build REST APIs using Node.js, Django, or Flask
+- Write efficient SQL and NoSQL (MongoDB) queries
+- Containerize services using Docker and deploy on Kubernetes
+- Set up CI/CD pipelines for automated testing and deployment
+- Work with AWS or GCP cloud infrastructure
+- Use Git for version control and collaborate in an Agile team
+- Debug and optimize application performance on Linux servers
+
+Required Skills:
+- JavaScript or Python
+- REST API design
+- SQL and MongoDB
+- Docker, Kubernetes
+- Git, CI/CD
+- Linux
+
+Nice to Have:
+- AWS or GCP experience
+- GraphQL
+- Experience with React for occasional frontend work

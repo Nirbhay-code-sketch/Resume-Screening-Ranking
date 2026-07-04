@@ -1,0 +1,21 @@
+Wei Zhang
+DevOps Engineer
+
+Summary:
+DevOps Engineer specializing in cloud infrastructure automation, container
+orchestration, and CI/CD pipelines.
+
+Skills:
+Docker, Kubernetes, AWS, GCP, CI/CD, Git, Linux, Python, Bash
+
+Experience:
+DevOps Engineer, CloudScale Systems (2020 - Present)
+- Automated deployment pipelines using CI/CD and Jenkins.
+- Managed containerized applications with Docker and Kubernetes on AWS
+  and GCP.
+- Wrote Bash and Python scripts to automate infrastructure tasks on Linux
+  servers.
+- Maintained version control workflows using Git.
+
+Education:
+B.Tech in Computer Engineering, Pune University

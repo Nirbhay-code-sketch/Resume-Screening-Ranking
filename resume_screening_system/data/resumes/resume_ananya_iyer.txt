@@ -1,0 +1,21 @@
+Ananya Iyer
+Data Science Intern
+
+Summary:
+Final-year student with internship experience in data science, strong
+foundation in statistics and Python-based machine learning.
+
+Skills:
+Python, Machine Learning, Statistics, Pandas, NumPy, Scikit-learn,
+Data Visualization, Communication, Problem Solving
+
+Experience:
+Data Science Intern, Insight Labs (2025 - 2026)
+- Assisted in building machine learning models using scikit-learn and
+  Python for a customer segmentation project.
+- Performed statistics and data analysis using pandas and numpy.
+- Created visualizations to communicate findings to the team, using
+  strong communication and problem solving skills.
+
+Education:
+B.Tech in Computer Science, Anna University (Expected 2026)

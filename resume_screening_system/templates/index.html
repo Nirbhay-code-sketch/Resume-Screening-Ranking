@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Screening &amp; Ranking System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">Screen<span>Fit By Nirbhay </span></div>
+      <div class="tagline">Resume Screening &amp; Ranking</div>
+    </header>
+
+    <h1 class="page-title">Rank candidates against a role in seconds</h1>
+    <p class="subtitle">
+      Give it a job description and a stack of resumes. It reads both,
+      scores each candidate on text relevance and required-skill coverage,
+      and hands back an explainable ranking — no black box, every match traceable.
+    </p>
+
+    {% if error %}
+      <div class="error-banner">{{ error }}</div>
+    {% endif %}
+
+    <form action="/screen" method="post" enctype="multipart/form-data">
+
+      <div class="card">
+        <h2>1. Job description</h2>
+        <p class="hint">Pick a bundled sample, paste your own text, or upload a .txt file.</p>
+
+        <div class="option-row">
+          <label class="radio-pill">
+            <input type="radio" name="jd_choice" value="sample" checked onchange="toggleFields()"> Use a sample role
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="jd_choice" value="paste" onchange="toggleFields()"> Paste text
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="jd_choice" value="upload" onchange="toggleFields()"> Upload .txt
+          </label>
+        </div>
+
+        <div id="jd-sample" class="field-block visible">
+          <select name="sample_jd">
+            {% for fname, label in sample_jds %}
+              <option value="{{ fname }}">{{ label }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div id="jd-paste" class="field-block">
+          <textarea name="jd_text" placeholder="Paste the job description here..."></textarea>
+        </div>
+
+        <div id="jd-upload" class="field-block">
+          <input type="file" name="jd_file" accept=".txt">
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>2. Resumes</h2>
+        <p class="hint">Upload one or more .txt resumes, or try it instantly with 8 bundled sample resumes.</p>
+
+        <div class="option-row">
+          <label class="radio-pill">
+            <input type="radio" name="resume_choice" value="sample" checked onchange="toggleFields()"> Use sample resumes (8)
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="resume_choice" value="upload" onchange="toggleFields()"> Upload my own
+          </label>
+        </div>
+
+        <div id="resume-upload" class="field-block">
+          <input type="file" name="resume_files" accept=".txt" multiple>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary">Screen &amp; rank candidates &rarr;</button>
+    </form>
+
+    <footer class="foot">
+      Built for Future Interns — Machine Learning Task 3 (2026) · TF-IDF similarity + rule-based skill matching, fully offline.
+      <br>nirbhaybhadwaj919@gmail.com , 9520942788</br>
+    </footer>
+  </div>
+
+  <script>
+    function toggleFields() {
+      const jdChoice = document.querySelector('input[name="jd_choice"]:checked').value;
+      document.getElementById('jd-sample').classList.toggle('visible', jdChoice === 'sample');
+      document.getElementById('jd-paste').classList.toggle('visible', jdChoice === 'paste');
+      document.getElementById('jd-upload').classList.toggle('visible', jdChoice === 'upload');
+
+      const resumeChoice = document.querySelector('input[name="resume_choice"]:checked').value;
+      document.getElementById('resume-upload').classList.toggle('visible', resumeChoice === 'upload');
+    }
+    toggleFields();
+  </script>
+</body>
+</html>
